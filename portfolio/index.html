@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bautista Grau - Portfolio</title>
+    <link rel="alternate icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><defs><linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%231e40af;stop-opacity:1' /><stop offset='50%' style='stop-color:%233b82f6;stop-opacity:1' /><stop offset='100%' style='stop-color:%231d4ed8;stop-opacity:1' /></linearGradient></defs><circle cx='64' cy='64' r='60' fill='url(%23grad1)' /><text x='64' y='85' font-family='Inter, sans-serif' font-size='48' font-weight='700' text-anchor='middle' fill='white' letter-spacing='2px'>BG</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="#home">
+                    <h2>BG</h2>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#experience" class="nav-link">Experiencia</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#education" class="nav-link">Formación</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-image animate-on-scroll">
+                        <div class="avatar-placeholder">
+                            <img src="assets/foto.jpeg" alt="Bautista Grau" class="profile-photo">
+                        </div>
+                    </div>
+                    <div class="hero-text animate-on-scroll">
+                        <h1>Bautista Grau</h1>
+                        <div class="hero-info">
+                            <p><i class="fas fa-birthday-cake"></i> 23 años</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Rosario, Santa Fe, Argentina</p>
+                        </div>
+                        <p class="hero-description">
+                            <span class="highlight">Estudiante de Ingeniería en Sistemas de Información.</span>  
+                        </p>
+                        <p class="hero-description">
+                            Me apasiona el análisis de datos y el desarrollo de soluciones digitales.
+                            Busco crecer en proyectos de datos, automatización e innovación tecnológica.
+                        </p>
+                        <p class="hero-description">
+                            Cuento con experiencia en soporte técnico, community management y proyectos académicos en SQL, Python y desarrollo web.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="assets/Bautista_Grau_Cv_2025.pdf" class="btn btn-primary" download="Bautista_Grau_CV.pdf">
+                                <i class="fas fa-download"></i>
+                                Descargar CV
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <i class="fas fa-envelope"></i>
+                                Contacto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/dataanalysis.png" alt="Análisis de Datos con SQL y Tableau">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Análisis de Datos con SQL y Tableau</h3>
+                                <a href="https://github.com/bautigr02/Layoffs-Data-Analysis" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            <p class="project-description">
+                                Proyecto académico con consultas SQL para limpieza/estructuración de datos y dashboards en Tableau.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Workbench</span>
+                                <span class="tech-tag">Tableau</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/datascience1.png" alt="Ciencia de Datos con Python">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Ciencia de Datos con Python</h3>
+                                <a href="https://github.com/bautigr02/prediccion-rotacion-clientes" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            <p class="project-description">
+                                Proyecto de data science con Python, limpieza de datos, visualización y modelos simples.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">Matplotlib</span>
+                                <span class="tech-tag">Seaborn</span>
+                                <span class="tech-tag">Scikit-learn</span>
+                                <span class="tech-tag">NumPy</span>
+                                <span class="tech-tag">Jupyter Notebooks</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/desarrolloweb.png" alt="Desarrollo Web con Angular y Node.js">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Desarrollo Web con Angular y Node.js</h3>
+                                <a href="https://github.com/bautigr02/TP-CURSOS" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            <p class="project-description">
+                                Aplicación web fullstack con Angular en frontend y Node.js en backend, manejo de rutas y base de datos.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">Typescript</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/pfolio.png" alt="Portfolio Personal">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Portfolio</h3>
+                                <a href="https://github.com/bautigr02/portfolio" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            <p class="project-description">
+                                Página web a modo portfolio donde muestro como puedo destacar en un posible trabajo.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">Javascript</span>
+                                <span class="tech-tag">Github</span>
+                                <span class="tech-tag">Vercel</span>
+                                <span class="tech-tag">Copilot</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title">Experiencia Laboral</h2>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <div class="experience-content">
+                            <h3>Soporte Técnico</h3>
+                            <h4>Chatealo</h4>
+                            <p>Investigación de tecnologías con IA, desarrollo de chatbots (no-code), documentación, producción de tutoriales y atención a clientes.</p>
+                        </div>
+                        <div class="experience-date">May 2024 – Feb 2025</div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-content">
+                            <h3>Community Manager</h3>
+                            <h4>AG Division Gastronomia | Smoke Oven</h4>
+                            <p>Creación y diseño de contenido, grabación y edición de posts y reels para "@agdivisiongastronomia" y "@smoke_oven".</p>
+                        </div>
+                        <div class="experience-date">Ene 2019 – May 2024</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title">Habilidades</h2>
+                <div class="skills-content">
+                    <!-- Technical Skills - Top -->
+                    <div class="skills-category skills-technical">
+                        <h3><i class="fas fa-laptop-code"></i> Habilidades Técnicas</h3>
+                        <div class="technical-skills">
+                            <div class="tech-skill-category">
+                                <h4><i class="fas fa-chart-bar"></i> Análisis de datos</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">SQL</span>
+                                    <span class="skill-tag">Tableau</span>
+                                    <span class="skill-tag">Power BI</span>
+                                    <span class="skill-tag">Excel</span>
+                                    <span class="skill-tag">Python (aprendiendo)</span>
+                                </div>
+                            </div>
+                            <div class="tech-skill-category">
+                                <h4><i class="fas fa-code"></i> Desarrollo web</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Angular</span>
+                                    <span class="skill-tag">HTML</span>
+                                    <span class="skill-tag">CSS</span>
+                                    <span class="skill-tag">Node.js</span>
+                                    <span class="skill-tag">Git</span>
+                                    <span class="skill-tag">GitHub</span>
+                                    <span class="skill-tag">Figma</span>
+                                    <span class="skill-tag">Axure</span>
+                                </div>
+                            </div>
+                            <div class="tech-skill-category">
+                                <h4><i class="fas fa-paint-brush"></i> Edición</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Canva</span>
+                                    <span class="skill-tag">CapCut</span>
+                                </div>
+                            </div>
+                            <div class="tech-skill-category">
+                                <h4><i class="fas fa-bullhorn"></i> Marketing digital</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Meta Ads</span>
+                                    <span class="skill-tag">Tienda Nube</span>
+                                    <span class="skill-tag">Shopify</span>
+                                </div>
+                            </div>
+                            <div class="tech-skill-category">
+                                <h4><i class="fas fa-globe"></i> Inglés</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">intermedio/avanzado</span>
+                                    <span class="skill-tag">Lectura y escritura fluida</span>
+                                    <span class="skill-tag">Conversacion intermedia</span>
+                                </div>
+                            </div>
+                            <div class="tech-skill-category">
+                                <h4><i class="fas fa-robot"></i> Bots IA (no-code)</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Flowise</span>
+                                    <span class="skill-tag">Conversation Retrievals</span>
+                                    <span class="skill-tag">Pinecone</span>
+                                    <span class="skill-tag">Text splitters</span>
+                                    <span class="skill-tag">n8n (aprendiendo)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills - Bottom -->
+                    <div class="skills-category skills-soft">
+                        <h3><i class="fas fa-user-tie"></i> Habilidades Blandas</h3>
+                        <div class="soft-skills">
+                            <div class="soft-skill-item">
+                                <i class="fas fa-rocket"></i>
+                                <span>Aprendizaje rápido</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <i class="fas fa-users"></i>
+                                <span>Trabajo en equipo</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <i class="fas fa-brain"></i>
+                                <span>Pensamiento analítico</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <i class="fas fa-user-check"></i>
+                                <span>Autonomía</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <i class="fas fa-handshake"></i>
+                                <span>Compromiso</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title">Formación Académica</h2>
+                <div class="education-list">
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3>Ingeniería en Sistemas</h3>
+                            <h4>UTN FRRo</h4>
+                            <p>4º año en curso</p>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3>Curso de Excel</h3>
+                            <h4>UTN</h4>
+                            <p>2022</p>
+                        </div>
+                        <a href="assets/curso-excel.JPEG" class="certificate-btn" target="_blank">
+                            <i class="fas fa-eye"></i>
+                            Ver Certificado
+                        </a>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3>Inglés</h3>
+                            <h4>Instituto Charles Dickens</h4>
+                            <p>2012–2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <a href="mailto:graujbautista@gmail.com">graujbautista@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h3>LinkedIn</h3>
+                                <a href="https://www.linkedin.com/in/juan-bautista-grau-b47bb6238/" target="_blank">Juan Bautista Grau</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h3>GitHub</h3>
+                                <a href="https://github.com/bautigr02" target="_blank">bautigr02</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Bautista Grau.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
